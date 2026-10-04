@@ -1,0 +1,10 @@
+name: CI
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: workflow v1
+        run: echo "workflow v1"; exit 1
